@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MySQL Form</title>
+<style type="text/css">
+body{
+margin-left: 10% !important;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<form action="mysql" method="POST" name="f1" class="pure-form pure-form-stacked">
+<fieldset>
+
+<legend>Registration Form</legend>
+ <fieldset class="pure-group">
+<label><strong>Name :</strong> </label>
+<input type="text" name="name" placeholder="Enter Full Name" required>
+</fieldset>
+ <fieldset class="pure-group">
+<label><strong>Address :</strong> </label>
+<textarea class="pure-input-1-2" placeholder="Enter Address" name="address" required></textarea>
+</fieldset>
+ <fieldset class="pure-group">
+<label><strong>Phone Number :</strong> </label>
+<input type="tel" name="phone" placeholder="Enter Phone Number" required>
+</fieldset>
+ <fieldset class="pure-group">
+<label><strong>Email :</strong> </label>
+<input type="email" name="email" placeholder="Enter Email Id" required>
+</fieldset>
+<input type="submit" value="Submit" class="pure-button pure-button-primary">
+</fieldset>
+</form>
+
+</body>
+</html>

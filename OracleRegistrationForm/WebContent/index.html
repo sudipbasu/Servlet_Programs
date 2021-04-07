@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Form</title>
+<style type="text/css">
+textarea,input[type=text],[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Student Registration Form</h1>
+<form action="oracle" method="post" name="f1">
+<table>
+
+<tr>
+<td>Enter Name</td>
+<td> : </td>
+<td><input type="text" name="name" placeholder="Full Name" required></td>
+</tr>
+<tr>
+<td>Enter Roll</td>
+<td> : </td>
+<td><input type="number" name="roll" placeholder="Roll Number" required></td>
+</tr>
+<tr>
+<td>Enter College</td>
+<td> : </td>
+<td><textarea name="college" placeholder="College Name" required></textarea></td>
+</tr>
+<tr>
+<td colspan="1"><button type="submit" class="button">Insert Data</button></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>

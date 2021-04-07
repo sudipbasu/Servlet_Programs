@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Registration Form</h1>
+<form class="needs-validation" novalidate action="mysql" name="f1" method="POST">
+	<div class="form-group">
+	<label><strong>First Name : </strong></label>
+	<input type="text" name="fname" class="form-control" placeholder="Enter the First Name" required="required">
+	<div class="valid-feedback">Valid</div>
+	<div class="invalid-feedback">First Name field can not blank</div>
+	</div>
+	<div class="form-group">
+	<label><strong>Last Name : </strong></label>
+	<input type="text" name="lname" class="form-control" placeholder="Enter the Last Name" required="required">
+	<div class="valid-feedback">Valid</div>
+	<div class="invalid-feedback">Last Name field can not blank</div>
+	</div>
+	<div class="form-group">
+	<label><strong>Phone Number :</strong> </label>
+	<input type="number" name="phone" class="form-control" placeholder="Enter the Phone Number" required="required">
+	<div class="valid-feedback">Valid</div>
+	<div class="invalid-feedback">Phone Number field can not blank</div>
+	</div>
+	<div class="form-group">
+	<label><strong>Address : </strong></label>
+	<textarea name="address" placeholder="Enter the Address" class="form-control" required="required"></textarea>
+	<div class="valid-feedback">Valid</div>
+	<div class="invalid-feedback">Address field can not blank</div>
+	</div>
+	<input type="submit" class="btn btn-primary" value="Submit"> 
+	<button type="reset" class="btn btn-danger">Reset</button>
+	</form>
+</div>
+<script>
+(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+	    
+	    var forms = document.getElementsByClassName('needs-validation');
+	    
+	    var validation = Array.prototype.filter.call(forms, function(form) {
+	      form.addEventListener('submit', function(event) {
+	        if (form.checkValidity() === false) {
+	          event.preventDefault();
+	          event.stopPropagation();
+	        }
+	        form.classList.add('was-validated');
+	      }, false);
+	    });
+	  }, false);
+	})();
+</script>
+</body>
+</html>
